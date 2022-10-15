@@ -1,8 +1,9 @@
 ---
+import DocLayout from "@layouts/DocLayout.astro";
 import "../assets/app.css";
-import Layout from "../layouts/BaseLayout.astro";
+import { Content as HomePageContent } from "./contents/index.md";
 ---
 
-<Layout title="Hello">
-  <h1>Home Page</h1>
-</Layout>
+<DocLayout>
+  <HomePageContent />
+</DocLayout>
