@@ -1,0 +1,24 @@
+---
+import DocumentationSideNav from "../components/DocumentationSideNav.astro";
+import BaseLayout from "./BaseLayout.astro";
+---
+
+<BaseLayout title="doc">
+  <div class="flex gap-10 max-w-5xl mx-auto my-20">
+    <div class="w-3/12 flex-none">
+      <DocumentationSideNav />
+    </div>
+    <div class="p-4 max-w-full shadow-sm bg-white">
+      <div class="prose max-w-none prose-gray prose-xl">
+        <slot />
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  body {
+    font-family: "Noto Serif Bengali";
+    @apply bg-zinc-100;
+  }
+</style>
